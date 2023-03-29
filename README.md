@@ -3,7 +3,18 @@
 </p>
 
 # Teslo API
-1. database up
+1.clone proyect
+2. 
+```
+yarn install
+``` 
+3. clone and rename the file ```.env.template``` by ```.env```
+4. fill the new ```.env``` file with your credentials
+5. database up
 ```
 docker-compose up -d
+```
+6. run project in dev mode
+```
+yarn start:dev
 ```
