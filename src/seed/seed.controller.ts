@@ -1,5 +1,7 @@
-import { Controller, Get, } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { SeedService } from './seed.service';
+import { Auth } from 'src/auth/decorators/auth.decorator';
+import { ValidRoles } from 'src/auth/interfaces';
 
 @Controller('seed')
 export class SeedController {
@@ -7,6 +9,6 @@ export class SeedController {
 
   @Get()
   executeSeed() {
-    return this.seedService.runSeed()
+    return this.seedService.runSeed();
   }
 }
